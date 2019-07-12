@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <strings.h>
+main() {
+	char palavra[50], inverso[50]; //palavra e seu inverso podem ter até 50 caracteres
+	int a, b; 
+	b = 0;
+	
+  printf("Escreva uma palavra: ");
+	gets(palavra);
+	
+  for (a=strlen(palavra)-1; a>=0; a--){ //strlen = variavel tipo inteiro que determina o tamanho de uma string
+		inverso[b] = palavra[a];
+		b++;
+	}
+	
+  printf("O inverso da palavra e: %s ",inverso);
+	system("pause");
+}
